@@ -18,6 +18,13 @@ title: 演習問題トップ
 2. Front Matter の `title` `source_url` `tags` などを更新します。
 3. 問題文や解答スケッチを Markdown で追記します。
 
+### 数式記法 (KaTeX)
+
+- インライン: `$\alpha^2 + \beta^2$`
+- ディスプレイ: `$$\int_0^1 f(x)\,dx$$`
+- エスケープが必要な場合は `\(`, `\)` も使用可能です。
+- LaTeX で扱えない記号は KaTeX の[サポート表](https://katex.org/docs/supported.html)を参照してください。
+
 ## GitHub Pages 上でのナビゲーション
 
 サイトのトップページ (`index.md`) と各演習ページに自動でリンクが追加され、一覧からたどれるようになっています。必要に応じて目次やタグを拡張してください。

@@ -28,10 +28,14 @@ defaults:
     values:
       layout: default
 
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: null
+
 sass:
   style: compressed
 
 exclude:
   - .github
   - vendor
-

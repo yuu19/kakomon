@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.css" integrity="sha384-J6qa484G8G2+XyZgOZO7LgmYcFpjUJfqP11LTguSibZbA+9MJby7xZ0vvo6Y7Rs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.js" integrity="sha384-LJ2J2se+CNJ+usx9nOlItc+EGZBHOGFJIiPrYPa9eTeXAFY4aQ6dAkueXqV6ChaO" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/contrib/auto-render.min.js" integrity="sha384-kWPLU14N2VQ9sKsxMNVVFX8hAn0c8fSxPJY457vHBKzszpPCJtO4/BPp4JVZ5iVo" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (typeof renderMathInElement !== 'function') {
+      return;
+    }
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '\\[', right: '\\]', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false}
+      ],
+      throwOnError: false
+    });
+  });
+</script>
