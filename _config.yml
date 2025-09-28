@@ -1,0 +1,37 @@
+title: "kakomon"
+description: "Graduate entrance exam archive with practice problem sets"
+baseurl: ""
+url: ""
+
+# enable GitHub Pages built-in theme
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  practice:
+    output: true
+    permalink: /practice/:path/
+
+defaults:
+  - scope:
+      path: "practice"
+      type: practice
+    values:
+      layout: default
+      nav_order: 10
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+
+sass:
+  style: compressed
+
+exclude:
+  - .github
+  - vendor
+

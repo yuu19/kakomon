@@ -10,6 +10,16 @@ Collection of graduate entrance examination materials gathered from Japanese uni
 - `titech/math/` — Tokyo Tech mathematics graduate entrance exams (Heisei 10 / 1998 through 2025). Source: https://www.math.titech.ac.jp/top/~jimu/Graduate/old-exam/innsi.html
 - `titech/info/` — Institute of Science Tokyo (Tokyo Tech) Information Science summer exams grouped by course: `is/` (数理・計算科学系) and `cs/` (情報工学系) for 2019–2024. Source: https://admissions.isct.ac.jp/ja/013/graduate/examination-questions
 
+## Practice Exercises (`practice/`)
+
+The `practice/` directory stores Markdown-based exercise sets that reference the archived PDFs. Each file includes metadata (title, source URL, tags, `last_reviewed`) and is rendered as an HTML page on GitHub Pages. Use `practice/templates/problem-set.md` as a starter when adding a new set, and keep university/subject/year folders aligned with the PDF archive.
+
+## GitHub Pages
+
+- The root of the repository is a Jekyll site that uses the `pages-themes/cayman` theme. `_config.yml` configures the `practice` collection and enables sitemap/SEO plugins.
+- Deployment is automated via `.github/workflows/pages.yml`. Pushing to `main` (or running the workflow manually) builds the site and publishes it to GitHub Pages.
+- To preview locally: `bundle install` followed by `bundle exec jekyll serve`. Remember to ignore `_site/` and `.jekyll-cache/` when making commits.
+
 ## Usage Notes
 
 - Files are provided for personal study; respect each university’s copyright notices before redistribution.
